@@ -1,0 +1,8 @@
+name: RsNpcVeriable
+main: cn.lanink.rsnpcveriable.Main
+version: "0.0.1-SNAPSHOT"
+api: ["1.0.9"]
+load: POSTWORLD
+author: "LT_Name"
+depend:
+  - "RsNPCX"
