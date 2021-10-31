@@ -1,21 +1,17 @@
 package cn.lanink.rsnpcveriable;
 
 import cn.nukkit.Player;
-import cn.nukkit.Server;
-import cn.nukkit.level.Level;
-import com.smallaswater.npc.data.RsNpcConfig;
-import com.smallaswater.npc.variable.BaseVariableV2;
+import com.smallaswater.npc.variable.BaseVariable;
+import tip.utils.Api;
 
 /**
  * @author LT_Name
  */
-public class RsNpcVeriable extends BaseVariableV2 {
+public class RsNpcVeriable extends BaseVariable {
 
     @Override
-    public void onUpdate(Player player, RsNpcConfig rsNpcConfig) {
-        for (Level level : Server.getInstance().getLevels().values()) {
-            this.addVariable("{LevelPlayerCount#" + level.getFolderName() + "}", String.valueOf(level.getPlayers().size()));
-        }
+    public String stringReplace(Player player, String inString) {
+       return Api.strReplace(inString, player);
     }
 
 }
