@@ -9,7 +9,7 @@ import com.smallaswater.npc.variable.BaseVariableV2;
 /**
  * @author LT_Name
  */
-public class RsNpcVeriableV2 extends BaseVariableV2 {
+public class RsNpcVariableV2 extends BaseVariableV2 {
 
     @Override
     public void onUpdate(Player player, RsNpcConfig rsNpcConfig) {

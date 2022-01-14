@@ -7,7 +7,7 @@ import tip.utils.Api;
 /**
  * @author LT_Name
  */
-public class RsNpcVeriable extends BaseVariable {
+public class RsNpcVariable extends BaseVariable {
 
     @Override
     public String stringReplace(Player player, String inString) {

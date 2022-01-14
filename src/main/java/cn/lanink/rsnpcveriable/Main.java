@@ -11,13 +11,13 @@ public class Main extends PluginBase {
     @Override
     public void onLoad() {
         this.saveResource("变量.txt", true);
-        VariableManage.addVariableV2("RsNpcVeriableV2", RsNpcVeriableV2.class);
+        VariableManage.addVariableV2("RsNpcVeriableV2", RsNpcVariableV2.class);
     }
 
     @Override
     public void onEnable() {
         if (this.getServer().getPluginManager().getPlugin("Tips") != null) {
-            VariableManage.addVariable("RsNpcVeriable", RsNpcVeriable.class);
+            VariableManage.addVariable("RsNpcVeriable", RsNpcVariable.class);
         }
     }
 }
