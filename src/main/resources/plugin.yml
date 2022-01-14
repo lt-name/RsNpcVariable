@@ -1,6 +1,6 @@
 name: RsNpcVariable
 main: cn.lanink.rsnpcveriable.Main
-version: "0.1.0-SNAPSHOT"
+version: "0.1.1-SNAPSHOT"
 api: ["1.0.9"]
 load: POSTWORLD
 author: "LT_Name"
