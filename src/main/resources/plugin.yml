@@ -1,4 +1,4 @@
-name: RsNpcVeriable
+name: RsNpcVariable
 main: cn.lanink.rsnpcveriable.Main
 version: "0.1.0-SNAPSHOT"
 api: ["1.0.9"]

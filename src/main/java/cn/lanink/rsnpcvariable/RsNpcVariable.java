@@ -1,4 +1,4 @@
-package cn.lanink.rsnpcveriable;
+package cn.lanink.rsnpcvariable;
 
 import cn.nukkit.Player;
 import com.smallaswater.npc.variable.BaseVariable;

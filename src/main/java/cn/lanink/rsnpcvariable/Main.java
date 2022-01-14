@@ -1,5 +1,6 @@
-package cn.lanink.rsnpcveriable;
+package cn.lanink.rsnpcvariable;
 
+import cn.lanink.rsnpcvariable.task.VariableUpdateTask;
 import cn.nukkit.plugin.PluginBase;
 import com.smallaswater.npc.variable.VariableManage;
 
@@ -16,6 +17,8 @@ public class Main extends PluginBase {
 
     @Override
     public void onEnable() {
+        this.getServer().getScheduler().scheduleAsyncTask(this, new VariableUpdateTask());
+
         if (this.getServer().getPluginManager().getPlugin("Tips") != null) {
             VariableManage.addVariable("RsNpcVeriable", RsNpcVariable.class);
         }
