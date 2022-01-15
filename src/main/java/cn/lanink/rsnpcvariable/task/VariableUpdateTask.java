@@ -45,12 +45,12 @@ public class VariableUpdateTask extends AsyncTask {
     }
 
     private void work(int tick) {
-        if (this.tick%40 == 0) {
-            if (this.queue.isEmpty()) {
-                for (int i = 0; i < 5; i++) {
-                    this.queue.add(this.get("https://v1.hitokoto.cn/?encode=text"));
-                }
+        if (this.tick%10 == 0) {
+            if (this.queue.size() < 10) {
+                this.queue.add(this.get("https://v1.hitokoto.cn/?encode=text"));
             }
+        }
+        if (this.tick%40 == 0 && !this.queue.isEmpty()) {
             VariableManage.addVariable("{一言}", this.queue::poll);
         }
     }
