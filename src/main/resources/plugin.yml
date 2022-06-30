@@ -1,10 +1,10 @@
 name: RsNpcVariable
 main: cn.lanink.rsnpcvariable.Main
-version: "0.1.1-SNAPSHOT"
+version: "0.2.0"
 api: ["1.0.9"]
 load: POSTWORLD
 author: "LT_Name"
 depend:
-  - "RsNPCX"
+  - "RsNPC"
 softdepend:
   - "Tips"
