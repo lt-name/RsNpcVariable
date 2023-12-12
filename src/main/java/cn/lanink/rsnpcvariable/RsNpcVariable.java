@@ -11,7 +11,7 @@ public class RsNpcVariable extends BaseVariable {
 
     @Override
     public String stringReplace(Player player, String inString) {
-        if (player.isOnline()) {
+        if (player != null && player.isOnline()) {
             return Api.strReplace(inString, player);
         }
         return inString;
